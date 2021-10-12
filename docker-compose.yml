@@ -1,44 +1,44 @@
 version: "3"
 services:
-  problem-solving-gathering:
+  playground-boss:
     image: gcc:latest
-    container_name: cpp-gathering-languages
+    container_name: playground-boss
     working_dir: /home
     stdin_open: true
     tty: true
     volumes:
       - "./:/home"
 
-  problem-solving-c:
+  playground-c:
     image: gcc:latest
-    container_name: language-c
+    container_name: playground-c
     working_dir: /home
     stdin_open: true
     tty: true
     volumes:
       - "./c:/home"
 
-  problem-solving-cpp:
+  playground-cpp:
     image: gcc:latest
-    container_name: language-cpp
+    container_name: playground-cpp
     working_dir: /home
     stdin_open: true
     tty: true
     volumes:
       - "./c++:/home"
 
-  problem-solving-java:
+  playground-java:
     image: openjdk:11
-    container_name: language-java
+    container_name: playground-java
     working_dir: /home
     stdin_open: true
     tty: true
     volumes:
       - "./java:/home"
 
-  problem-solving-python:
+  playground-python:
     image: python:latest
-    container_name: language-python
+    container_name: playground-python
     working_dir: /home
     stdin_open: true
     tty: true
